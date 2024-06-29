@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <title>Rock game</title>
+  </head>
+  <body>
+    <div class="container full">
+      <!-- Score section -->
+      <section class="bg-primary">
+        <div class="container">
+          <div class="row align-items-start p-5">
+            <!-- player 1 caption -->
+            <div class="col">
+              <h2 class="text-center">Player <span id="scoreP"></span></h2>
+              <div class="container mb-3 mt-3">
+                <div class="container"></div>
+                <h2 id="playerScore" class="text-center"></h2>
+              </div>
+            </div>
+            <!-- score caption -->
+            <div class="col">
+              <h2 class="text-center">Score</h2>
+              <div class="container mb-3 mt-3">
+                <div class="container"></div>
+                <h2 id="scoreWon" class="text-center bg-warning"></h2>
+              </div>
+            </div>
+            <!-- Computer score caption -->
+            <div class="col">
+              <h2 class="text-center">Computer <span id="scoreC"></span></h2>
+              <div class="container mb-3 mt-3">
+                <div class="container"></div>
+                <h2 id="computerScore" class="text-center"></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Buttons for playing, in the middle section -->
+      <section class="bg-warning">
+        <div class="container">
+          <div id="playerBtns" class="row align-items-start p-5">
+            <!-- Player buttons for choosing-->
+            <div class="col p-5 d-flex justify-content-center align-items-end">
+              <button
+                id="playerBtn"
+                class="btn btn-primary p-3 m-2"
+                data-action
+              >
+                rock
+              </button>
+              <button
+                id="playerBtn"
+                class="btn btn-primary p-3 m-2"
+                data-action
+              >
+                paper
+              </button>
+              <button
+                id="playerBtn"
+                class="btn btn-primary p-3 m-2"
+                data-action
+              >
+                scissors
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Reset Zone -->
+      <footer class="footer bg-warning">
+        <div class="container d-flex justify-content-center">
+          <button id="resetBtn" class="btn btn-danger p-3 m-5">
+            Reset score
+          </button>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
